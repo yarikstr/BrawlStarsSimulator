@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>big box</title>
+    <style>
+        body{
+            background: url(https://www.meme-arsenal.com/memes/5f91f711ca52b9ee01d77604fe4533bd.jpg)no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+        .main_get{
+            margin: 80px auto;
+            {% if nothing == True %}
+                background: skyblue;
+            {% elif rarity == 'Rare' %}
+                background: #017010;
+            {% elif rarity == 'Super rare' %}
+                background: #084ebf;
+            {% elif rarity == 'Epic' %}
+                background: #8a24d4;
+            {% elif rarity == 'Mythic' %}
+                background: #9e0000;
+            {% elif rarity == 'Legendary' %}
+                background: #d1ba21;
+            {% elif rarity == 'Chromatic' %}
+                background: #cc540a;
+            {% endif %}
+            width: 700px;
+            border-style: solid;
+            border-size: 10px;
+            border-color: black;
+            height: 300px;
+        }
+        .brawler_img{
+            margin-top: 30px auto;
+            padding-left: 20px;
+        }
+        .coins_img{
+            margin-left: 500px;
+            margin-top: 120px;
+            padding-left: 20px;
+        }
+        .coins_amount{
+            font-size: 40px;
+            margin-left: 585px;
+            color: white;
+            font-family: Comic Sans MS;
+        }
+        .coins_txt{
+            font-size: 50px;
+            margin-left: 560px;
+            color: white;
+            font-family: Comic Sans MS;
+        }
+        .brawler_txt{
+            font-size: 40px;
+            padding-left: 100px;
+            font-family: "Lucida Console";
+        }
+        .backarrow{
+            background: grey;
+            border-style: solid;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="backarrow">
+        <a href="{{ url_for('lobby', nickname=nickname, password=password) }}"><img src="https://pluspng.com/img-png/left-arrow-png-left-icon-1600.png" width="60px"></a>
+    </div>
+    {% if link != 'https://vignette.wikia.nocookie.net/brawlstars/images/f/f0/Coins.png/revision/latest/scale-to-width-down/340?cb=20190801142451&path-prefix=pl' and nothing == False %}
+    <table class="main_get">
+        <tr>
+            <td><img class="brawler_img" align="left" src="{{ link }}" width="200px"></td>
+            <td class="brawler_txt">Congrats! <br>You found a <strong>{{ rarity }}</strong><br> Brawler: <br> <script>
+                    var text="{{ brawler }}" // YOUR TEXT
+                    var speed=80 // SPEED OF FADE
+
+                    // ********** LEAVE THE NEXT BIT ALONE!
+
+
+                    if (document.all||document.getElementById){
+                    document.write('<span id="highlight">' + text + '</span>')
+                    var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+                    }
+                    else
+                    document.write(text)
+                    var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+                    var r=1
+                    var g=1
+                    var b=1
+                    var seq=1
+                    function changetext(){
+                    rainbow="#"+hex[r]+hex[g]+hex[b]
+                    storetext.style.color=rainbow
+                    }
+                    function change(){
+                    if (seq==6){
+                    b--
+                    if (b==0)
+                    seq=1
+                    }
+                    if (seq==5){
+                    r++
+                    if (r==12)
+                    seq=6
+                    }
+                    if (seq==4){
+                    g--
+                    if (g==0)
+                    seq=5
+                    }
+                    if (seq==3){
+                    b++
+                    if (b==12)
+                    seq=4
+                    }
+                    if (seq==2){
+                    r--
+                    if (r==0)
+                    seq=3
+                    }
+                    if (seq==1){
+                    g++
+                    if (g==12)
+                    seq=2
+                    }
+                    changetext()
+                    }
+                    function starteffect(){
+                    if (document.all||document.getElementById)
+                    flash=setInterval("change()",speed)
+                    }
+                    starteffect()
+                </script></td>
+
+
+        </tr>
+    </table>
+    {% elif nothing == True %}
+    <span class="coins_txt">Coins</span>
+    <div class="coins_img">
+        <img align="top" src="{{ link }}" width="200px">
+    </div>
+    <span class="coins_amount">x {{ coins }}</span>
+
+    {% endif %}
+</body>
+</html>

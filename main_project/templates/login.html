@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        .reg_block{
+            background: white;
+            padding: 30px;
+            margin: 60px 770px;
+            width: 300px;
+            text-align: center;
+            border-style: solid;
+            background: url(https://www.hhconcreteconstruction.com/wp-content/uploads/sites/203/2017/12/dark-wood.png)no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+        body{
+            background: url(https://wallpaperaccess.com/full/1312134.jpg)no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+        .sign_up_for_free{
+            text-align: left;
+            border-style: solid;
+            background: white;
+            width: 190px;
+        }
+        .button{
+            background: orange;
+            margin: auto;
+        }
+        .password{
+            margin-top: 9px;
+            margin-left: 5px;
+        }
+        .top_line{
+            width: 400px;
+            background: url(https://www.hhconcreteconstruction.com/wp-content/uploads/sites/203/2017/12/dark-wood.png)no-repeat;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            border-style: solid;
+        }
+        .register{
+            background: white;
+            border-style: solid;
+            text-align: center;
+            padding-top: 5px;
+            margin: auto;
+            width: 350px;
+        }
+        .error{
+            width: 200px;
+            color: red;
+            border-style: solid;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body style="background-attachment:fixed" topmargin="0">
+    <div class="reg_block">
+        <form class="form" method="post">
+            <input type="text" name="nickname" placeholder="enter your nickname">
+            <input type="submit">
+            <input class="password" name="password" type="password" placeholder="password">
+        </form>
+        {% if error != '' %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>

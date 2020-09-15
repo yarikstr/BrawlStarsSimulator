@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>your_brawlers</title>
+    <style>
+        body{
+            background: url(data:image/jpeg;base64,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)no-repeat;
+            background-size: 100%;
+        }
+        .backarrow{
+            background: grey;
+            border-style: solid;
+            width: 100px;
+        }
+        .len_brawlers{
+            margin: auto;
+
+        }
+        .len_p{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-family: sans-serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+        .choose_it{
+            padding: 60px;
+            padding-top: 1px;
+            padding-bottom: 22px;
+            padding-right: 205px;
+            font-size: 33px;
+            margin: auto;
+            background: #FFDF00;
+            font-family: Times New Roman;
+            color: red;
+            text-border-style: solid;
+        }
+        .rosa{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/9/94/Rosa_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200303144700)no-repeat;
+            background-size: 90%;
+
+            padding: 80px;
+
+            width: 100px;
+            border-style: solid;
+        }
+        .primo{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/c/c5/El_Primo_Portrait.png/revision/latest/scale-to-width-down/340?cb=20191012200018)no-repeat;
+            background-size: 75%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .barley{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/a/a1/Barley_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182055)no-repeat;
+            background-size: 80%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .poco{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/5/59/Poco_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200513143843)no-repeat;
+            background-size: 85%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .jacky{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/0/03/Jacky_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200317100434)no-repeat;
+            background-size: 84%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .carl{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/1/19/Carl_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182115)no-repeat;
+            background-size: 80%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .darryl{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/4/46/Darryl_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200317100419)no-repeat;
+            background-size: 89%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .rico{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/e/e1/Rico_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182045)no-repeat;
+            background-size: 79%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .penny{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/8/8d/Penny_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182356)no-repeat;
+            background-size: 75%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .bea{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/a/ae/Bea_Portrait.png/revision/latest?cb=20200317100451)no-repeat;
+            background-size: 75%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .pam{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/d/dc/Pam_Portrait.png/revision/latest?cb=20200513143851)no-repeat;
+            background-size: 89%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .bibi{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/c/c2/Bibi_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200303144656)no-repeat;
+            background-size: 89%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .frank{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/6/63/Frank_Portrait.png/revision/latest?cb=20200304182409)no-repeat;
+            background-size: 77%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .nani{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/c/c0/Nani_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200513144321)no-repeat;
+            background-size: 76%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .piper{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/f/f0/Piper_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182144)no-repeat;
+            background-size: 78%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .mortis{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/b/b4/Mortis_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182441)no-repeat;
+            background-size: 89%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .tara{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/4/49/Tara_Portrait.png/revision/latest/scale-to-width-down/340?cb=20190630191241)no-repeat;
+            background-size: 70%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .mr_p{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/0/08/Mr._P_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200317100443)no-repeat;
+            background-size: 82%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .sprout{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/4/4d/Sprout_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200404120105)no-repeat;
+            background-size: 92%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .max{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/8/83/Max_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200317100500)no-repeat;
+            background-size: 73%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .gene{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/7/7c/Gene_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182105)no-repeat;
+            background-size: 75%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .crow{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/6/6f/Crow_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200706075842)no-repeat;
+            background-size: 68%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .spike{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/2/22/Spike_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182450)no-repeat;
+            background-size: 80%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .sandy{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/e/e3/Sandy_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182134)no-repeat;
+            background-size: 84%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .leon{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/4/48/Leon_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200304182803)no-repeat;
+            background-size: 72%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .gale{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/3/3f/Gale_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200513143833)no-repeat;
+            background-size: 73%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .surge{
+            background: url(https://vignette.wikia.nocookie.net/brawlstars/images/2/27/Surge_Portrait.png/revision/latest/scale-to-width-down/340?cb=20200706075845)no-repeat;
+            background-size: 76%;
+            padding: 80px;
+            width: 100px;
+            border-style: solid;
+        }
+        .rare_icon{
+            padding-bottom: 20px;
+            background: green;
+            border-style: solid;
+            margin: 50px;
+        }
+        .super_rare_icon{
+            padding-bottom: 20px;
+            background: blue;
+            border-style: solid;
+            margin: 50px;
+        }
+        .epic_icon{
+            padding-bottom: 20px;
+            background: #8a24d4;
+            border-style: solid;
+            margin: 50px;
+        }
+        .mythic_icon{
+            padding-bottom: 20px;
+            background: #9e0000;
+            border-style: solid;
+            margin: 50px;
+        }
+        .legendary_icon{
+            padding-bottom: 20px;
+            background: #d1ba21;
+            border-style: solid;
+            margin: 50px;
+        }
+        .chromatic_icon{
+            padding-bottom: 20px;
+            background: #cc540a;
+            border-style: solid;
+            margin: 50px;
+        }
+        .icon{
+            width: 150px;
+        }
+        table{
+            margin: auto;
+        }
+        .lock{
+
+            padding: 5px;
+        }
+        td{
+            padding-bottom: 30px;
+        }
+        .empty_slot{
+            padding-left: 120px;
+        }
+        .empty_slot2{
+            padding-left: 10px;
+        }
+        .span_text{
+            background: black;
+            padding-right: 13.2px;
+            padding-top: 19px;
+            padding-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-attachment:fixed" topmargin="0">
+
+    <div class="backarrow">
+        <a href="{{ url_for('lobby', nickname=nickname, password=password) }}"><img src="https://pluspng.com/img-png/left-arrow-png-left-icon-1600.png" width="60px"></a>
+    </div>
+    <div class="len_brawlers">
+        <p class="len_p">Brawlers {{ len_brawlers }}/28</p>
+    </div>
+    <table>
+        <tr class="tr_icon">
+            <td class="rare_icon">
+                <div class="rosa">
+
+                </div>
+                {% if 'Rosa' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <strong><span class="span_text">Open boxes to unlock Brawlers!</span></strong>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="rare_icon">
+                <div class="primo">
+
+                </div>
+                {% if 'El Primo' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="rare_icon">
+                <div class="barley">
+
+                </div>
+                {% if 'Barley' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="rare_icon">
+                <div class="poco">
+
+                </div>
+                {% if 'Poco' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="super_rare_icon">
+                <div class="jacky">
+
+                </div>
+                {% if 'Jacky' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="super_rare_icon">
+                <div class="carl">
+
+                </div>
+                {% if 'Carl' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="super_rare_icon">
+                <div class="darryl">
+
+                </div>
+                {% if 'Darryl' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="super_rare_icon">
+                <div class="rico">
+
+                </div>
+                {% if 'Rico' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="super_rare_icon">
+                <div class="penny">
+
+                </div>
+                {% if 'Penny' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="epic_icon">
+                <div class="bea">
+
+                </div>
+                {% if 'Bea' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="epic_icon">
+                <div class="pam">
+
+                </div>
+                {% if 'Pam' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="epic_icon">
+                <div class="bibi">
+
+                </div>
+                {% if 'Bibi' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="epic_icon">
+                <div class="frank">
+
+                </div>
+                {% if 'Frank' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="epic_icon">
+                <div class="nani">
+
+                </div>
+                {% if 'Nani' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="epic_icon">
+                <div class="piper">
+
+                </div>
+                {% if 'Piper' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="mythic_icon">
+                <div class="mortis">
+
+                </div>
+                {% if 'Mortis' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="mythic_icon">
+                <div class="tara">
+
+                </div>
+                {% if 'Tara' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="mythic_icon">
+                <div class="sprout">
+
+                </div>
+                {% if 'Sprout' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="mythic_icon">
+                <div class="max">
+
+                </div>
+                {% if 'Max' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="mythic_icon">
+                <div class="gene">
+
+                </div>
+                {% if 'Gene' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="mythic_icon">
+                <div class="mr_p">
+
+                </div>
+                {% if 'Mr.P' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="legendary_icon">
+                <div class="crow">
+
+                </div>
+                {% if 'Crow' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="legendary_icon">
+                <div class="spike">
+
+                </div>
+                {% if 'Spike' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="legendary_icon">
+                <div class="sandy">
+
+                </div>
+                {% if 'Sandy' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr class="tr_icon">
+            <td class="legendary_icon">
+                <div class="leon">
+
+                </div>
+                {% if 'Leon' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="chromatic_icon">
+                <div class="gale">
+
+                </div>
+                {% if 'Gale' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+            <td>
+                <img src="https://i.stack.imgur.com/hKekH.png" width="20px">
+            </td>
+            <td class="chromatic_icon">
+                <div class="surge">
+
+                </div>
+                {% if 'Surge' not in brawlers %}
+                <img class="lock" src="https://icon-library.com/images/lock-png-icon/lock-png-icon-0.jpg" width="20px">
+                <span class="span_text"><strong>Open boxes to unlock Brawlers!</strong></span>
+                {% else %}
+                <strong><span class="choose_it"></span></strong>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+</body>
+</html>
